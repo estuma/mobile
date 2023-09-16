@@ -1,2 +1,11 @@
-# mobile
 [모바일프로그래밍2분반_9팀_최종발표PPT.pptx](https://github.com/estuma/mobile/files/12639982/2._9._.PPT.pptx)
+
+![image](https://github.com/estuma/mobile/assets/92361215/7f86dc17-6797-42bf-b1c8-05b27a0ed526)
+![image](https://github.com/estuma/mobile/assets/92361215/73510621-a9c1-47e5-b804-d19e9317ff99)
+![image](https://github.com/estuma/mobile/assets/92361215/44491a19-e4a6-4cb8-acf0-570d25c1b061)
+![image](https://github.com/estuma/mobile/assets/92361215/f46ff262-1133-4b60-b7da-968c87aad31c)
+![image](https://github.com/estuma/mobile/assets/92361215/03e68517-67e3-49ea-8636-955720847b7f)
+![image](https://github.com/estuma/mobile/assets/92361215/069d9fce-72d5-4f71-a26c-593677013c0a)
+![image](https://github.com/estuma/mobile/assets/92361215/5d064760-c9d6-4528-8b24-72afcc4d6b28)
+![image](https://github.com/estuma/mobile/assets/92361215/bed56105-dcae-4e69-90a0-d626b95bc513)
+![image](https://github.com/estuma/mobile/assets/92361215/e485c145-cb7c-4ad3-944e-d440fcd131d8)
