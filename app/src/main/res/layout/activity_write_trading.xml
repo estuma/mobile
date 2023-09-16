@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteTradingActivity">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#F9F4E7"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/TextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="제목"
+            android:textColor="#6c9023"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/titleTradeW"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#F9F4E7"
+            android:hint="제목을 입력하세요"
+            android:paddingLeft="10dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dashLine1"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layerType="software"
+        android:src="@drawable/dash_line"
+        app:layout_constraintTop_toBottomOf="@+id/linear1" />
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#F9F4E7"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dashLine1">
+
+        <TextView
+            style="@style/TextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="분류"
+            android:textColor="#6c9023"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Spinner
+            android:id="@+id/dormW"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="0dp"
+            android:contentDescription="기숙사"
+            android:dropDownWidth="200dp"
+            android:spinnerMode="dropdown"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/titles"
+            app:layout_constraintStart_toEndOf="@+id/resetBtn"
+            app:layout_constraintTop_toBottomOf="@+id/searchView"
+            tools:ignore="TouchTargetSizeCheck"></Spinner>
+
+        <Spinner
+            android:id="@+id/kindW"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="0dp"
+            android:contentDescription="종류"
+            android:dropDownWidth="200dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toTopOf="@+id/titles"
+            app:layout_constraintStart_toEndOf="@+id/dormW"
+            app:layout_constraintTop_toBottomOf="@+id/searchView"
+            tools:ignore="TouchTargetSizeCheck"></Spinner>
+
+        <Spinner
+            android:id="@+id/stateW"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="0dp"
+            android:contentDescription="기숙사"
+            android:dropDownWidth="200dp"
+            android:spinnerMode="dropdown"
+            android:textSize="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/titles"
+            app:layout_constraintStart_toEndOf="@+id/resetBtn"
+            app:layout_constraintTop_toBottomOf="@+id/searchView"
+            tools:ignore="TouchTargetSizeCheck"></Spinner>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dashLine2"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layerType="software"
+        android:src="@drawable/dash_line"
+        app:layout_constraintTop_toBottomOf="@+id/linear2" />
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#F9F4E7"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashLine2">
+
+        <TextView
+            style="@style/TextColor"
+            android:layout_width="90sp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="필요 인원"
+            android:textColor="#6c9023"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/needNumW"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="6"
+            android:background="#F9F4E7"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="입력하세요"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/needDownBtn"
+            style="@style/BtnColor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="-"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/needUpBtn"
+            style="@style/BtnColor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="+"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dashLine3"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layerType="software"
+        android:src="@drawable/dash_line"
+        app:layout_constraintTop_toBottomOf="@+id/linear3" />
+
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#F9F4E7"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashLine3">
+
+        <TextView
+            style="@style/TextColor"
+            android:layout_width="90sp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="모인 인원"
+            android:textColor="#6c9023"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/reserveNumW"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="6"
+            android:background="#F9F4E7"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="입력하세요"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/reserveDownBtn"
+            style="@style/BtnColor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="-"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/reserveUpBtn"
+            style="@style/BtnColor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="+"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dashLine4"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layerType="software"
+        android:src="@drawable/dash_line"
+        app:layout_constraintTop_toBottomOf="@+id/linear4" />
+
+    <ScrollView
+        android:id="@+id/linear5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#F9F4E7"
+        app:layout_constraintBottom_toTopOf="@+id/dashLine5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashLine4">
+
+        <EditText
+            android:id="@+id/contentTradeW"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F9F4E7"
+            android:gravity="left"
+            android:hint="내용을 입력하세요"
+            android:padding="16dp" />
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/dashLine5"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layerType="software"
+        android:src="@drawable/dash_line"
+        app:layout_constraintBottom_toTopOf="@+id/linear6" />
+
+    <LinearLayout
+        android:id="@+id/linear6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F9F4E7"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:weightSum="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageTradeIv"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="#F9F4E7" />
+
+        <Button
+            android:id="@+id/regTradeBtn"
+            style="@style/BtnColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:text="등록"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+
+        <Button
+            android:id="@+id/attachTradeBtn"
+            style="@style/BtnColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="첨부"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

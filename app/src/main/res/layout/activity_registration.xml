@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/rg_identification"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/rg_ui_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="3dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp"
+            android:text="아이디"
+            android:textColor="#587819"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/rg_id_input"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="아이디"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="#2b2b2b" />
+
+        <TextView
+            android:id="@+id/rg_id_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0040koreatech.ac.kr"
+            android:textColor="#3C3C3C"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rg_name"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_identification">
+
+        <TextView
+            android:id="@+id/rg_ui_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="3dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp"
+            android:text="이름"
+            android:textColor="#587819"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_marginRight="15dp" />
+
+        <EditText
+            android:id="@+id/rg_name_input"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="이름"
+            android:textColor="#2b2b2b"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rg_nickname"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_name">
+
+        <TextView
+            android:id="@+id/rg_ui_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="3dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp"
+            android:text="닉네임"
+            android:textColor="#587819"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_marginRight="15dp" />
+
+        <EditText
+            android:id="@+id/rg_nickname_input"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="닉네임"
+            android:textColor="#2b2b2b"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rg_pw"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_nickname">
+
+        <TextView
+            android:id="@+id/rg_ui_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="3dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp"
+            android:text="비밀번호"
+            android:textColor="#587819"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_marginRight="15dp" />
+
+        <EditText
+            android:id="@+id/rg_pw_input"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="비밀번호"
+            android:textColor="#2b2b2b"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rg_pwCheck"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_pw">
+
+        <TextView
+            android:id="@+id/rg_ui_pwCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="3dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp"
+            android:text="비밀번호 확인"
+            android:textColor="#587819"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_marginRight="15dp" />
+
+        <EditText
+            android:id="@+id/rg_pwCheck_input"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="비밀번호 확인"
+            android:textColor="#2b2b2b"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rg_liveBuilding"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_pwCheck">
+
+        <TextView
+            android:id="@+id/rg_ui_liveBuilding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="3dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp"
+            android:text="소속건물"
+            android:textColor="#587819"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_marginRight="15dp" />
+
+        <Spinner
+            android:id="@+id/rg_liveBuilding_input"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="building"
+            android:dropDownWidth="wrap_content"
+            android:textColor="#2b2b2b"
+            android:spinnerMode="dropdown"></Spinner>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btt_realRegistration"
+        style="@style/BtnColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="onRegistraionClick"
+        android:text="회원 가입"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_liveBuilding"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/rg_errorCase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#55A7E1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_liveBuilding" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

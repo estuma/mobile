@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TradingBoardActivity">
+
+    <ImageView
+        android:id="@+id/dashLine1"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="10dp"
+        android:layerType="software"
+        android:src="@drawable/dash_line"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/kind"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="376dp"
+        android:layout_height="512dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:scrollbarFadeDuration="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dorm"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/writeTradingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:contentDescription="writeTradingFloating"
+        android:focusable="true"
+        android:minHeight="48dp"
+        android:onClick="onClick"
+        app:backgroundTint="#669559"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/sym_action_write" />
+
+    <Spinner
+        android:id="@+id/kind"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="종류"
+        android:dropDownWidth="200dp"
+        android:spinnerMode="dropdown"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/dorm"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck"></Spinner>
+
+    <Spinner
+        android:id="@+id/dorm"
+        android:layout_width="129dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="기숙사"
+        android:dropDownWidth="200dp"
+        android:spinnerMode="dropdown"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/tradeResetBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck"></Spinner>
+
+    <Button
+        android:id="@+id/tradeResetBtn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="초기화"
+        style="@style/BtnColor"
+        android:onClick="onClick"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

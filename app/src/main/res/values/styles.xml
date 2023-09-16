@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+    <!-- For activities containing toolbar -->
+    <!-- Theme Without ActionBar -->
+    <style name="AppThemeNo" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#b8dc70</item>
+        <item name="colorPrimaryDark">@android:color/holo_blue_dark</item>
+        <item name="colorAccent">#70b8dc</item>
+
+        <item name="android:windowBackground">@drawable/theme_single</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- 버튼 -->
+    <style name="BtnColor" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/btn_shape</item>
+        <item name="android:textColor">#587819</item>
+        <item name="android:text">28dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 텍스트뷰 -->
+    <style name="TextColor" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/text_shape</item>
+        <item name="android:textColor">#6c9023</item>
+        <item name="android:text">28dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#b8dc70</item>
+        <item name="colorPrimaryDark">#919191</item>
+        <item name="colorAccent">#70b8dc</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"></style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"></style>
+</resources>

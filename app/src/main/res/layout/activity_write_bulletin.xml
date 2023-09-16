@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteBulletinActivity">
+
+    <LinearLayout
+        android:id="@+id/linearBull1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/TextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="제목"
+            android:textColor="#6c9023"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/titleBullW"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#F9F4E7"
+            android:hint="제목을 입력하세요"
+            android:paddingLeft="10dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dashLineBull1"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layerType="software"
+        android:src="@drawable/dash_line"
+        app:layout_constraintTop_toBottomOf="@+id/linearBull1" />
+
+    <ScrollView
+        android:id="@+id/linearBull2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:background="#F9F4E7"
+        app:layout_constraintBottom_toTopOf="@+id/dashLineBull2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashLineBull1">
+
+        <EditText
+            android:id="@+id/contentBullW"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#F9F4E7"
+            android:gravity="top|left"
+            android:hint="내용을 입력하세요"
+            android:padding="16dp" />
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/dashLineBull2"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layerType="software"
+        android:src="@drawable/dash_line"
+        app:layout_constraintBottom_toTopOf="@+id/linearBull3" />
+
+    <LinearLayout
+        android:id="@+id/linearBull3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F9F4E7"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:weightSum="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageBullIv"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="#F9F4E7" />
+
+        <Button
+            android:id="@+id/regBullBtn"
+            style="@style/BtnColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:text="등록"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+
+        <Button
+            android:id="@+id/attachBullBtn"
+            style="@style/BtnColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="첨부"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dormitory">
+        <item> 전체 </item>
+        <item> 다솔관 </item>
+        <item> 솔빛관 </item>
+        <item> 예솔관 </item>
+        <item> 예지관 </item>
+        <item> 은솔관 </item>
+        <item> 참빛관 </item>
+        <item> 청솔관 </item>
+        <item> 한울관 </item>
+        <item> 함지관 </item>
+        <item> 해울관 </item>
+        <item> IH </item>
+        <item> "자취" </item>
+    </string-array>
+
+    <string-array name="buildingList">
+        <item> "해울관" </item>
+        <item> "예지관" </item>
+        <item> "함지관" </item>
+        <item> "다솔관" </item>
+        <item> "한울관" </item>
+        <item> "참빛관" </item>
+        <item> "청솔관" </item>
+        <item> "예솔관" </item>
+        <item> "은솔관" </item>
+        <item> "솔빛관" </item>
+        <item> "IH" </item>
+        <item> "자취" </item>
+    </string-array>
+
+    <string-array name="kind">
+        <item> 전체 </item>
+        <item> 공구 </item>
+        <item> 판매 </item>
+        <item> 나눔 </item>
+    </string-array>
+
+    <string-array name="state">
+        <item> 판매중 </item>
+        <item> 판매완료 </item>
+    </string-array>
+</resources>
